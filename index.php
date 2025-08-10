@@ -122,7 +122,7 @@
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAuIQ0CsEtoYNpnuFsKIse7gx6pk-Qgd2wSS5yKo5ANompqQ/viewform" target="_blank" rel="noopener noreferrer" class="bg-[#2a2a2e] hover:bg-[#3a3a3e] transition-colors p-5 rounded-xl flex justify-between items-center">
                     <div>
                         <h4 class="text-white font-bold text-lg">Ekibe Katıl</h4>
-                        <p class="text-gray-400 text-sm">Aramza Katıl</p>
+                        <p class="text-gray-400 text-sm">Aramıza Katıl</p>
                     </div>
                     <div class="w-12 h-12 flex items-center justify-center rounded-full bg-black/20 border border-white/10">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="17" y1="11" x2="23" y2="11"></line></svg>
@@ -281,7 +281,7 @@
                         $rank = 1;
                         foreach($popular_mangas as $manga) :
                             $genres = wp_get_post_terms($manga->ID, 'manga_genre', array('fields' => 'names'));
-                            $genre_text = !empty($genres) ? implode(', ', array_slice($genres, 0, 2)) : 'Tarihi, Dvüş Sanatları';
+                            $genre_text = !empty($genres) ? implode(', ', array_slice($genres, 0, 2)) : 'Tarihi, Dövüş Sanatları';
                             $cover_url = has_post_thumbnail($manga->ID) ? get_the_post_thumbnail_url($manga->ID, 'medium') : 'https://manga-site-cdn.b-cdn.net/uploads/manga/covers/default-cover.jpeg';
                         ?>
                         <?php if($rank == 1) : ?>
